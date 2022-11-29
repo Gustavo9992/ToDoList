@@ -39,10 +39,10 @@ $ npm run dev
 
 ### The following tools were used to build the project:
 
+- [TailWindCSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [TailWindCSS](https://tailwindcss.com/)
 - [Vite](https://vitejs.dev/)
 
 ## Author 
