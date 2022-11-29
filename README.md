@@ -26,7 +26,7 @@ $ git clone https://github.com/Gustavo9992/ToDoList.git
 # Access the project folder in the console/cmd
 $ cd ToDoList
 
-# Install the dependencies 
+# Install dependencies 
 $ npm install
 
 # Run the application in developer mode 
