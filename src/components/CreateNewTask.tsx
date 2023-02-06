@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent, useState } from 'react';
+import { ChangeEvent, FormEvent, InvalidEvent, useState } from 'react';
 import Clipboard from '../assets/Clipboard.svg';
 import { PlusCircle } from 'phosphor-react';
 
@@ -63,6 +63,10 @@ export function CreateNewTask() {
     setTasks(taskListWithoutDeletedOne)
   }
 
+  function handleNewTaskInvalid(event: InvalidEvent<HTMLInputElement>) {
+    event.target.setCustomValidity('Este campo é obrigatório!')
+  }
+
   return (
     <>
       <form onSubmit={handleCreateNewTask} className="w-[46rem] h-14 left-[calc(50%-46rem/2)] flex items-center gap-2 top-[11.4rem] absolute">
@@ -72,6 +76,8 @@ export function CreateNewTask() {
           className="w-[40rem] p-4 bg-gray-500 border border-solid border-gray-700 rounded-lg h-12 text-base leading-[140%] text-purple-light placeholder:text-gray-300 focus:border-purple-dark focus:border-2"
           onChange={handleNewTaskTextChange}
           value={newTaskText}
+          required
+          onInvalid={handleNewTaskInvalid}
         />
         <button className="w-[5.625rem] h-12 bg-purple-dark rounded-lg text-gray-100 font-bold gap-2 flex flex-row items-center justify-center text-sm hover:bg-purple-light transition-all">
           Criar
