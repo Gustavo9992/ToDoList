@@ -85,7 +85,7 @@ export function CreateNewTask() {
           <PlusCircle size={16} weight="bold" />
         </button>
       </form>
-      <div className="w-[46rem] h-72 left-[calc(50%-46rem/2)] top-72 flex flex-col items-start gap-6 absolute">
+      <div className="w-[46rem] left-[calc(50%-46rem/2)] top-72 flex flex-col items-start gap-6 absolute">
         <div className="flex flex-row justify-between items-end w-[46rem] h-5 font-bold">
           <div className="flex flex-row items-center gap-2">
             <span className="text-purple-light text-sm leading-4">Tarefas criadas</span>
