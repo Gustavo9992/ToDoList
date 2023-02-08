@@ -79,8 +79,6 @@ export function CreateNewTask() {
           value={newTaskText}
           required
           onInvalid={handleNewTaskInvalid}
-          pattern="[a-zA-Z0-9]"
-          title="Só é possível criar uma tarefa com letras e/ou números"
         />
         <button className="w-[5.625rem] h-12 bg-purple-dark rounded-lg text-gray-100 font-bold gap-2 flex flex-row items-center justify-center text-sm hover:bg-purple-light transition-all">
           Criar
