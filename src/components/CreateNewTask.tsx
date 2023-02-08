@@ -104,14 +104,15 @@ export function CreateNewTask() {
           </div>
         </div> :
         tasks.map(task => {
-          return (<Task
-                    key={task.id}
-                    id={task.id}
-                    title={task.title}
-                    isComplete={task.isComplete}
-                    onCompleteTask={handleCompleteTask}
-                    onDeleteTask={handleDeleteTask}
-                  />)
+          return (
+            <Task
+              key={task.id}
+              id={task.id}
+              title={task.title}
+              isComplete={task.isComplete}
+              onCompleteTask={handleCompleteTask}
+              onDeleteTask={handleDeleteTask}
+            />)
           })}
       </div>
     </>
